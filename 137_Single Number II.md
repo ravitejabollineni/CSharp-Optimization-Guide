@@ -28,7 +28,7 @@ Output: 99
 
 ---
 
-## Solution 1: HashMap Approach (Straightforward)
+## Solution 1: Dictionary Approach (Straightforward)
 
 ```csharp
 public class Solution {
