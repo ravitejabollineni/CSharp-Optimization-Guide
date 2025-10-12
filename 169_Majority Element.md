@@ -49,16 +49,13 @@ public class Solution {
     public int MajorityElement(int[] nums) {
         Dictionary<int,int> dict = new Dictionary<int,int>();
         
-        foreach(int num in nums) {
+         foreach(int num in nums) {
             dict[num] = dict.ContainsKey(num) ? dict[num] + 1 : 1;
-        }
-        
-        foreach(var item in dict) {
-            if(item.Value > nums.Length/2) {
-                return item.Key;
+             if(dict[num] > nums.Length/2) {
+                return num;
             }
         }
-        return 0;
+        return -1;
     }
 }
 ```
